@@ -1,18 +1,9 @@
 "use client"
 import Image from "next/image";
-import Head from "next/head";
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillYoutube,
-} from "react-icons/ai";
 import { useState } from "react";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import photo from "../../public/profile.jpg";
 export default function Home() {
-  
   const [darkMode, setDarkMode] = useState(false);
-
   return (
     <div className={darkMode ? "dark" : ""}>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
